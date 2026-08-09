@@ -9,8 +9,8 @@
 window.STORE_CONFIG = {
   storeName: "Key of Life",
   currency: "USD",
-  orderEmail: "",          // مثال: orders@keyoflife.com
-  whatsappNumber: "",      // مثال بدون + أو مسافات: 12025550123
+  orderEmail: "ashrafelsayed612@gmail.com",
+  whatsappNumber: "18177709380",
   instagramUrl: "#instagram",
   facebookUrl: "#facebook",
   pinterestUrl: "#pinterest"
