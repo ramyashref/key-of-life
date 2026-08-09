@@ -28,5 +28,14 @@ window.PRODUCTS = [
   { id: 9, name: "Alexandria Silk Scarf", category: "Accessories", price: 52, image: "https://images.unsplash.com/photo-1601379329542-31c59347e2a3?auto=format&fit=crop&w=900&q=85", badge: "Limited", details: "Azure · Terracotta" },
   { id: 10, name: "Desert Glow Candle", category: "Home Decor", price: 34, image: "https://images.unsplash.com/photo-1602874801006-e26c8d421174?auto=format&fit=crop&w=900&q=85", details: "Amber & Oud" },
   { id: 11, name: "Nubian Woven Basket", category: "Home Decor", price: 65, image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=85", badge: "Artisan-made", details: "Natural fibers" },
-  { id: 12, name: "Cairo Arch Vase", category: "Home Decor", price: 58, image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85", details: "Sandstone" }
+  { id: 12, name: "Cairo Arch Vase", category: "Home Decor", price: 58, image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85", details: "Sandstone" },
+  {
+  id: 13,
+  name: "Egyptian Matching Heart Keychain Set – 2 Pieces",
+  category: "Egyptian Gifts",
+  price: 5.99,
+  image: "egyptian-matching-heart-keychain-set.png",
+  badge: "New",
+  details: "Matching Set · 2 Pieces"
+}
 ];
