@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Key of Life — Egyptian lingerie, gifts, accessories and home decor.">
+  <meta name="theme-color" content="#5e2530">
+  <title>Key of Life | Egyptian Soul, Modern Ritual</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Free U.S. shipping on orders over $120 <span>•</span> Designed in Egypt, delivered with care</div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Key of Life home">
+      <span class="brand-mark">☥</span>
+      <span><strong>KEY OF LIFE</strong><small>Egyptian soul, modern ritual</small></span>
+    </a>
+    <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+      <a href="#shop" data-category="All">Shop all</a>
+      <button type="button" data-category="Lingerie">Lingerie</button>
+      <button type="button" data-category="Egyptian Gifts">Egyptian gifts</button>
+      <button type="button" data-category="Accessories">Accessories</button>
+      <a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open menu">Menu</button>
+      <button class="bag-button" id="bagButton" type="button" aria-label="Open shopping bag">Bag <span id="bagCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">From Egypt, with meaning</p>
+        <h1>Wear the story.<br><em>Gift the soul.</em></h1>
+        <p class="hero-text">Thoughtful lingerie, handcrafted Egyptian gifts, and distinctive accessories—curated to bring a little Cairo warmth into every day.</p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-category="All">Explore the collection</button>
+          <a class="text-link" href="#story">Discover our story <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>Small-batch</strong><span>Thoughtfully curated</span></div>
+          <div><strong>Ships in 2–3 days</strong><span>Across the United States</span></div>
+          <div><strong>Gift-ready</strong><span>Beautifully wrapped</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Elegant fashion and Egyptian inspired accessories">
+        <div class="hero-image-main"></div>
+        <div class="hero-image-small"></div>
+        <div class="sun-disc"><span>☥</span></div>
+        <p class="vertical-note">CAIRO · NEW YORK · LOS ANGELES</p>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Shop by category">
+      <button type="button" data-category="Lingerie"><span class="cat-icon">✦</span><strong>Lingerie</strong><small>Softness, reimagined</small></button>
+      <button type="button" data-category="Egyptian Gifts"><span class="cat-icon">☥</span><strong>Egyptian Gifts</strong><small>Stories worth giving</small></button>
+      <button type="button" data-category="Accessories"><span class="cat-icon">◉</span><strong>Accessories</strong><small>Everyday statements</small></button>
+      <button type="button" data-category="Home Decor"><span class="cat-icon">⌂</span><strong>Home Decor</strong><small>Warmth with character</small></button>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">Curated for you</p><h2>Find your piece</h2></div>
+        <p>Each item carries a touch of Egypt—made for modern homes, thoughtful gifts, and beautiful everyday moments.</p>
+      </div>
+
+      <div class="shop-tools">
+        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Product categories"></div>
+        <div class="search-sort">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products" aria-label="Search products"></label>
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="new">Newest</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-search" id="emptySearch" hidden>No pieces found. Try another search or category.</div>
+      <button class="outline-button" id="showAllButton" type="button">View the full collection</button>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-collage"><div class="story-photo-one"></div><div class="story-photo-two"></div><span class="story-symbol">☥</span></div>
+      <div class="story-copy">
+        <p class="eyebrow">The meaning behind the name</p>
+        <h2>A key to beauty,<br>heritage & connection.</h2>
+        <p>In ancient Egypt, the Ankh was the key of life—a symbol of vitality, balance, and enduring beauty. We carry that spirit into a modern collection made to be worn, shared, and remembered.</p>
+        <p>From softly considered lingerie to artisan-inspired gifts, every Key of Life piece is selected to feel personal and full of story.</p>
+        <a class="text-link" href="#shop">Shop pieces with meaning <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <span class="newsletter-symbol">☥</span>
+      <div><p class="eyebrow">A little Cairo in your inbox</p><h2>Join the Key of Life circle</h2><p>New drops, gift edits, and first access—sent thoughtfully, never too often.</p></div>
+      <form id="newsletterForm"><input type="email" placeholder="Your email address" aria-label="Email address" required><button type="submit">Join the circle</button></form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">☥</span><strong>KEY OF LIFE</strong><p>Egyptian soul, modern ritual.<br>Curated in Cairo. Shared worldwide.</p></div>
+    <div><h3>Shop</h3><a href="#shop" data-category="All">All products</a><button type="button" data-category="Lingerie">Lingerie</button><button type="button" data-category="Egyptian Gifts">Egyptian gifts</button><button type="button" data-category="Accessories">Accessories</button></div>
+    <div><h3>Help</h3><a data-contact-link href="#">Contact us</a><a href="#shipping">Shipping & delivery</a><a href="#returns">Returns & exchanges</a><a href="#size">Size guide</a></div>
+    <div><h3>Follow</h3><a href="#instagram">Instagram</a><a href="#facebook">Facebook</a><a href="#pinterest">Pinterest</a></div>
+    <p class="copyright">© 2026 Key of Life. All rights reserved. <span>Prices shown in USD.</span></p>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="cart-header"><div><p class="eyebrow">Your selection</p><h2>Shopping bag <span id="drawerCount">0</span></h2></div><button id="closeCart" type="button" aria-label="Close bag">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+      <p>Shipping is calculated after we confirm your order.</p>
+      <button class="primary-button" id="sendOrderButton" type="button">Prepare & send order <span>→</span></button>
+      <small>No payment is taken now. We will confirm availability and shipping first.</small>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
