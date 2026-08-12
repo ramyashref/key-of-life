@@ -3,7 +3,7 @@
 
   const config = window.STORE_CONFIG;
   const products = window.PRODUCTS;
-  const categories = ["All", "Lingerie", "Egyptian Gifts", "Accessories", "Home Decor"];
+  const categories = ["All", ...new Set(products.map(function (product) { return product.category; }))];
   const state = { category: "All", query: "", sort: "featured", showAll: false, cart: [] };
 
   const grid = document.getElementById("productGrid");
@@ -42,7 +42,10 @@
 
   function filteredProducts() {
     let result = products.filter(function (product) {
-      const inCategory = state.category === "All" || product.category === state.category;
+      const inCategory = state.category === "All" || product.category === state.category ||
+        (state.category === "Accessories" && product.category.includes("Accessories")) ||
+        (state.category === "Lingerie" && product.category.includes("Lingerie")) ||
+        (state.category === "Home Decor" && product.category.includes("Home Decor"));
       const inSearch = (product.name + " " + product.category + " " + (product.details || "")).toLowerCase().includes(state.query.toLowerCase());
       return inCategory && inSearch;
     });
@@ -64,7 +67,8 @@
     grid.innerHTML = visible.map(function (product) {
       return '<article class="product-card">' +
         '<div class="product-image-wrap">' +
-          '<img src="' + escapeHtml(product.image) + '" alt="' + escapeHtml(product.name) + '" loading="lazy">' +
+          '<img class="product-primary-image" src="' + escapeHtml(product.image) + '" alt="' + escapeHtml(product.name) + '" loading="lazy">' +
+          (product.hoverImage ? '<img class="product-hover-image" src="' + escapeHtml(product.hoverImage) + '" alt="" loading="lazy">' : "") +
           (product.badge ? '<span class="badge">' + escapeHtml(product.badge) + '</span>' : '') +
           '<button class="quick-add" type="button" data-add="' + product.id + '">Add to bag <span>+</span></button>' +
         '</div>' +
